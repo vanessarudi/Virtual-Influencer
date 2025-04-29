@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Porsche Virtual Influencer{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <div class="title">Virtual Influencer Ray</div>
+            <div class="actions">
+                <button id="connection-test" class="connection-button">
+                    <i class="fas fa-wifi"></i> API-Status
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="connection-status" class="connection-status">
+        <div class="status-content">
+            <div id="status-icon" class="status-icon loading"></div>
+            <div id="status-text" class="status-text">Verbindung wird geprüft...</div>
+            <div id="response-time" class="response-time"></div>
+        </div>
+        <button id="close-status" class="close-status"><i class="fas fa-times"></i></button>
+    </div>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html> 
