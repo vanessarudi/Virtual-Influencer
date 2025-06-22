@@ -5344,3 +5344,32 @@ NameError: name 'base_persona' is not defined
 2025-06-22 18:35:33,133 - werkzeug - INFO -  * Debugger PIN: 961-764-374
 2025-06-22 18:41:30,348 - werkzeug - INFO -  * Detected change in 'C:\\Users\\vanes\\Desktop\\projects\\Prototyp\\content_generator.py', reloading
 2025-06-22 18:41:30,447 - werkzeug - INFO -  * Restarting with stat
+2025-06-22 18:41:31,386 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-22 18:41:31,386 - root - INFO - Umgebung: production
+2025-06-22 18:41:31,387 - root - INFO - Debug-Modus: deaktiviert
+2025-06-22 18:41:31,387 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-22 18:41:31,388 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-22 18:41:31,390 - root - INFO - Server wird gestartet...
+2025-06-22 18:41:31,395 - werkzeug - WARNING -  * Debugger is active!
+2025-06-22 18:41:31,398 - werkzeug - INFO -  * Debugger PIN: 961-764-374
+2025-06-22 18:41:33,634 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-22 18:41:33,642 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "GET / HTTP/1.1" 200 -
+2025-06-22 18:41:33,739 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,743 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,748 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,752 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,752 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,753 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-22 18:41:33,753 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:33] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-22 18:41:38,449 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-22 18:41:38,449 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-22 18:41:39,587 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-22 18:41:39,588 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 1139 ms
+2025-06-22 18:41:39,589 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 1139 ms
+2025-06-22 18:41:39,589 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:39] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-22 18:41:39,592 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-22 18:41:39,594 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-22 18:41:40,401 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-22 18:41:40,408 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 814 ms
+2025-06-22 18:41:40,409 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 814 ms
+2025-06-22 18:41:40,410 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:40] "GET /api/connection/test HTTP/1.1" 200 -
