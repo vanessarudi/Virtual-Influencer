@@ -1,8 +1,8 @@
-# Umgebungsvariablen
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local 
-node_modules
-node_modules
+__pycache__/
+*.pyc
+*.log
+*.sqlite
+node_modules/
+dist/
+venv/

@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (closeStatusButton) {
         closeStatusButton.addEventListener('click', hideConnectionStatus);
     }
-
-    // ... existing code ...
 });
 
 // Funktion zum Testen der API-Verbindung

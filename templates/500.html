@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Titel der Fehlerseite - wird in Browser-Tab angezeigt -->
-    <title>404 - Seite nicht gefunden</title>
+    <title>500 - Serverfehler</title>
     
     <!-- Verlinkung zum CSS-Stylesheet über Flask's url_for Funktion -->
     <!-- Diese Funktion generiert automatisch die korrekte URL für statische Dateien -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- Hauptcontainer für das Layout -->
     <div class="container">
         <!-- Hauptüberschrift mit HTTP-Statuscode -->
-        <h1>404 - Seite nicht gefunden</h1>
+        <h1>500 - Serverfehler</h1>
         
         <!-- Benutzerfreundliche Fehlermeldung -->
-        <p>Die angeforderte Seite konnte leider nicht gefunden werden.</p>
+        <p>Leider ist ein interner Serverfehler aufgetreten.</p>
+        
+        <!-- Zusätzliche Information für den Benutzer -->
+        <!-- Gibt dem Benutzer das Gefühl, dass das Problem behandelt wird -->
+        <p>Unsere Techniker wurden automatisch benachrichtigt und arbeiten an einer Lösung.</p>
         
         <!-- Navigation zurück zur Startseite -->
         <!-- url_for('index') generiert die URL zur Hauptroute der Anwendung -->
         <p><a href="{{ url_for('index') }}">Zurück zur Startseite</a></p>
     </div>
 </body>
-</html>
+</html> 

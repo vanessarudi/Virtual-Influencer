@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- Meta-Tags für korrekte Zeichenkodierung und Responsive Design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Dynamischer Titel - kann von erbenden Templates überschrieben werden -->
     <title>{% block title %}Porsche Virtual Influencer{% endblock %}</title>
+    
+    <!-- CSS-Stylesheets -->
+    <!-- Hauptstylesheet für das Design der Anwendung -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Font Awesome für Icons (CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- JavaScript-Datei für interaktive Funktionen -->
     <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+    
+    <!-- Favicon (Browser-Tab-Icon) -->
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+    
+    <!-- Zusätzlicher Head-Bereich für erbende Templates -->
     {% block head %}{% endblock %}
 </head>
 <body>
+    <!-- Overlay für visuelle Effekte (z.B. Blur-Effekte) -->
     <div class="overlay"></div>
     
+    <!-- Hauptnavigation/Header der Anwendung -->
     <header class="header">
         <div class="header-content">
-            <div class="title">Virtual Influencer Ray</div>
+            <!-- Linke Seite: Logo und Markenname -->
+            <div class="logo-section">
+                <!-- Haupttitel der Anwendung -->
+                <div class="title">Virtual Influencer</div>
+                <!-- Trennzeichen zwischen Titel und Logo -->
+                <span class="brand-separator">×</span>
+                <!-- Porsche-Logo -->
+                <div class="porsche-logo">
+                    <img src="{{ url_for('static', filename='public/porsche logo.png') }}" alt="Porsche Logo">
+                </div>
+            </div>
+            
+            <!-- Rechte Seite: Aktions-Buttons -->
             <div class="actions">
+                <!-- API-Verbindungstest Button -->
                 <button id="connection-test" class="connection-button">
-                    <i class="fas fa-wifi"></i> API-Status
+                    API Status
                 </button>
             </div>
         </div>
     </header>
 
+    <!-- Popup für API-Verbindungsstatus -->
     <div id="connection-status" class="connection-status">
         <div class="status-content">
+            <!-- Icon für den Status (Loading/Success/Error) -->
             <div id="status-icon" class="status-icon loading"></div>
+            <!-- Text-Nachricht für den Status -->
             <div id="status-text" class="status-text">Verbindung wird geprüft...</div>
+            <!-- Antwortzeit der API -->
             <div id="response-time" class="response-time"></div>
         </div>
+        <!-- Schließen-Button für das Status-Popup -->
         <button id="close-status" class="close-status"><i class="fas fa-times"></i></button>
     </div>
 
+    <!-- Hauptinhalt der Seite -->
     <main>
+        <!-- Template-Block für den Seiteninhalt -->
+        <!-- Erbende Templates füllen diesen Bereich mit ihrem spezifischen Inhalt -->
         {% block content %}{% endblock %}
     </main>
 
+    <!-- Template-Block für JavaScript-Funktionen -->
+    <!-- Erbende Templates können hier zusätzliche Scripts hinzufügen -->
     {% block scripts %}{% endblock %}
 </body>
 </html> 

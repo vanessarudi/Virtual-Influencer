@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block title %}Porsche Virtual Influencer - Ray{% endblock %}
+
+{% block content %}
+<!-- Landing Page Section -->
+<section id="landing-section" class="landing-container">
+    <div class="landing-content">
+        <div class="landing-left">
+            <h1 class="landing-title">Virtual Influencer</h1>
+            <div class="landing-separator">×</div>
+            <div class="landing-logo-img">
+                <img src="{{ url_for('static', filename='public/porsche logo.png') }}" alt="Porsche Logo">
+            </div>
+            
+            <p class="landing-description">
+                Entdecke Ray, den digitalen Influencer mit echter Leidenschaft für Porsche.
+                Generiere authentische Inhalte für Social Media mit nur wenigen Klicks.
+            </p>
+            
+            <a href="#generator-section" class="landing-button scroll-button">Lets create</a>
+        </div>
+        
+        <div class="landing-right">
+            <div class="ray-image">
+                <img src="{{ url_for('static', filename='public/Ray.png') }}" alt="Ray - Virtual Influencer">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Generator Section -->
+<section id="generator-section" class="container generator-container">
+    <div class="main-content">
+        <!-- Linke Spalte: Parametereingabe -->
+        <div class="left-column">
+            <h1 class="main-title">Lets make some things clear:</h1>
+            
+            <form id="generationForm">
+                <!-- Thema und Stimmung nebeneinander -->
+                <div class="parameter-row">
+                    <div class="parameter-field">
+                        <div class="parameter-label">Thema</div>
+                        <select class="form-select" id="topic" required>
+                            <option value="" selected disabled>Bitte auswählen</option>
+                            <option value="Fahrerlebnis">Fahrerlebnis</option>
+                            <option value="Nachhaltigkeit">Nachhaltigkeit</option>
+                            <option value="Design">Design</option>
+                            <option value="Technologie">Technologie</option>
+                            <option value="Lifestyle">Lifestyle</option>
+                            <option value="Rennsport">Rennsport</option>
+                        </select>
+                    </div>
+                    
+                    <div class="parameter-field">
+                        <div class="parameter-label">Stimmung</div>
+                        <select class="form-select" id="targetAudience" required>
+                            <option value="" selected disabled>Bitte auswählen</option>
+                            <option value="Freude">Freude</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Traurigkeit">Traurigkeit</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Inhaltstyp und Zielgruppe nebeneinander -->
+                <div class="parameter-row">
+                    <div class="parameter-field">
+                        <div class="parameter-label">Inhaltstyp</div>
+                        <select class="form-select" id="contentType" required>
+                            <option value="" selected disabled>Bitte auswählen</option>
+                            <!-- <option value="Instagram-Feed">Feed-Beitrag</option> -->
+                            <option value="Instagram-Story">Story</option>
+                            <option value="Instagram-Reels">Reels</option>
+                            <option value="Beitrag">Beitrag</option>
+                        </select>
+                    </div>
+                    
+                    <div class="parameter-field">
+                        <div class="parameter-label">Zielgruppe</div>
+                        <select class="form-select" id="targetGroup">
+                            <option value="Allgemein" selected>Allgemein</option>
+                            <option value="Enthusiasten">Porsche Enthusiasten</option>
+                            <option value="TechInteressierte">Technik-Interessierte</option>
+                            <option value="Umweltbewusste">Umweltbewusste</option>
+                            <option value="Designer">Design-Liebhaber</option>
+                            <option value="Junge">Junge Zielgruppe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Zusätzliche Anweisung allein in einer Zeile -->
+                <div class="parameter-row">
+                    <div class="parameter-field">
+                        <div class="parameter-label">Zusätzliche Anweisung</div>
+                        <input type="text" class="form-control" id="extraInstructions" placeholder="z.B. Fokus auf den neuen 911 GT3, besondere Features erwähnen ...">
+                    </div>
+                </div>
+
+                <div class="parameter-row" style="display: none;">
+                    <div class="parameter-field">
+                        <div class="parameter-label">Anzahl der Hashtags</div>
+                        <input type="number" class="form-control" id="hashtagCount" min="0" max="10" value="3">
+                    </div>
+                </div>
+
+                <button type="button" id="generateButton" class="btn btn-primary" onclick="generatePersonalizedText()">
+                    start
+                </button>
+            </form>
+        </div>
+
+        <!-- Rechte Spalte: Vorschau -->
+        <div class="right-column">
+            <h2 class="vorschau-title">Vorschau:</h2>
+            
+            <div class="vorschau-content">
+                <div id="generationResult">
+                    <div id="generatePrompt">
+                        Bereit für inspirierende Porsche Content?<br>
+                        Starte den Generator!
+                    </div>
+                    <pre id="generatedText" style="display: none;"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Status-Anzeige-Elemente
+        const connectionTestBtn = document.getElementById('connection-test');
+        const connectionStatus = document.getElementById('connection-status');
+        const statusIcon = document.getElementById('status-icon');
+        const statusText = document.getElementById('status-text');
+        const responseTime = document.getElementById('response-time');
+        const closeStatusBtn = document.getElementById('close-status');
+        
+        // Status-Anzeige ein/ausblenden
+        if (connectionTestBtn) { // Prüfen ob der Button existiert
+            connectionTestBtn.addEventListener('click', function() {
+                connectionStatus.style.display = 'flex';
+                testApiConnection();
+            });
+        }
+        
+        if (closeStatusBtn) { // Prüfen ob der Button existiert
+            closeStatusBtn.addEventListener('click', function() {
+                connectionStatus.style.display = 'none';
+            });
+        }
+        
+        // API-Verbindungstest
+        async function testApiConnection() {
+            if (!statusIcon || !statusText || !responseTime) return; // Sicherstellen, dass Elemente existieren
+            statusIcon.className = 'status-icon loading';
+            statusText.textContent = 'Verbindung wird geprüft...';
+            responseTime.textContent = '';
+            
+            try {
+                const response = await fetch('/api/connection/test');
+                const data = await response.json();
+                
+                if (response.ok && data.status === 'success') {
+                    statusIcon.className = 'status-icon success';
+                    statusText.textContent = 'API Verbindung erfolgreich';
+                    responseTime.textContent = data.response_time;
+                } else {
+                    statusIcon.className = 'status-icon error';
+                    statusText.textContent = `Verbindung fehlgeschlagen: ${data.error || 'Unbekannter Fehler'}`;
+                    responseTime.textContent = '';
+                }
+            } catch (error) {
+                statusIcon.className = 'status-icon error';
+                statusText.textContent = `Fehler: ${error.message}`;
+                responseTime.textContent = '';
+            }
+        }
+
+        // Smooth scroll für den "Lets create" Button
+        const scrollButtons = document.querySelectorAll('.scroll-button');
+        scrollButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+
+    async function generatePersonalizedText() {
+        const button = document.getElementById('generateButton');
+        const generatePrompt = document.getElementById('generatePrompt');
+        const textElement = document.getElementById('generatedText');
+        
+        if (!button || !generatePrompt || !textElement) return; // Sicherstellen, dass Elemente existieren
+
+        // Parameter auslesen
+        const topic = document.getElementById('topic').value;
+        const contentType = document.getElementById('contentType').value;
+        const targetAudience = document.getElementById('targetAudience').value;
+        const extraInstructions = document.getElementById('extraInstructions').value;
+        
+        // Validierung
+        if (!topic || !contentType || !targetAudience) {
+            alert('Bitte fülle alle erforderlichen Felder aus (Thema, Inhaltstyp, Zielgruppe).');
+            return;
+        }
+        
+        generatePrompt.style.display = 'none';
+        textElement.style.display = 'block';
+        textElement.textContent = 'Generiere...';
+        button.disabled = true;
+
+        try {
+            const response = await fetch('/api/generate/personalized', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    topic: topic,
+                    content_type: contentType,
+                    target_audience: targetAudience,
+                    extra_instructions: extraInstructions
+                })
+            });
+            
+            const data = await response.json();
+
+            if (response.ok && data.status === 'success') {
+                textElement.textContent = data.content;
+                console.log("Personalisierte Generierung erfolgreich:", data);
+            } else {
+                textElement.textContent = `Fehler: ${data.error || 'Unbekannter Fehler'} (${data.details || 'N/A'})`;
+                console.error("Personalisierte Generierung fehlgeschlagen:", data);
+            }
+        } catch (error) {
+            textElement.textContent = `Fehler beim Senden der Anfrage: ${error}`;
+            console.error("Fehler bei personalisierter Generierung:", error);
+        } finally {
+            if (button) button.disabled = false; // Sicherstellen, dass Button existiert
+        }
+    }
+</script>
+{% endblock %} 
