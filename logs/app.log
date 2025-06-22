@@ -5373,3 +5373,13 @@ NameError: name 'base_persona' is not defined
 2025-06-22 18:41:40,408 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 814 ms
 2025-06-22 18:41:40,409 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 814 ms
 2025-06-22 18:41:40,410 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 18:41:40] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-22 18:43:42,075 - werkzeug - INFO -  * Detected change in 'C:\\Users\\vanes\\Desktop\\projects\\Prototyp\\app.py', reloading
+2025-06-22 18:43:42,173 - werkzeug - INFO -  * Restarting with stat
+2025-06-22 18:43:43,206 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-22 18:43:43,207 - root - INFO - Umgebung: production
+2025-06-22 18:43:43,207 - root - INFO - Debug-Modus: deaktiviert
+2025-06-22 18:43:43,208 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-22 18:43:43,209 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-22 18:43:43,210 - root - INFO - Server wird gestartet...
+2025-06-22 18:43:43,216 - werkzeug - WARNING -  * Debugger is active!
+2025-06-22 18:43:43,219 - werkzeug - INFO -  * Debugger PIN: 961-764-374
