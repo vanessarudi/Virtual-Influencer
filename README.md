@@ -5,6 +5,11 @@ Ein Prototyp für einen digitalen Influencer namens Ray, der personalisierte Inh
 ## 📋 Übersicht
 Dieser Prototyp demonstriert die Fähigkeiten eines virtuellen Influencers, der automatisch personalisierte Social Media Inhalte für Porsche-Händler erstellt. Die Anwendung nutzt OpenAI's GPT-Modelle, um authentische und zielgruppenspezifische Inhalte zu generieren.
 
+## 📂 Git-Repository
+Der Prototyp ist auf GitHub verfügbar und kann von dort geklont werden:
+- **Repository-URL**: https://github.com/vanessarudi/Virtual-Influencer
+- **Zugriff**: Öffentliches Repository
+
 ## ✨ Funktionen
 - **API-Verbindungstest**: Überprüfung der OpenAI API-Konnektivität
 - **Personalisierte Textgenerierung** mit verschiedenen Parametern:
@@ -58,8 +63,8 @@ OPENAI_API_KEY=sk-your-actual-api-key-here
 
 ```bash
 # Klonen Sie das Repository
-git clone [Repository-URL]
-cd Prototyp
+git clone https://github.com/vanessarudi/Virtual-Influencer.git
+cd Virtual-Influencer
 ```
 
 **Hinweis**: Ersetzen Sie `[Repository-URL]` mit der tatsächlichen URL Ihres Git-Repositories.
