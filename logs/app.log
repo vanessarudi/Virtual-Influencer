@@ -5383,3 +5383,237 @@ NameError: name 'base_persona' is not defined
 2025-06-22 18:43:43,210 - root - INFO - Server wird gestartet...
 2025-06-22 18:43:43,216 - werkzeug - WARNING -  * Debugger is active!
 2025-06-22 18:43:43,219 - werkzeug - INFO -  * Debugger PIN: 961-764-374
+2025-06-24 09:30:56,150 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-24 09:30:56,151 - root - INFO - Umgebung: production
+2025-06-24 09:30:56,151 - root - INFO - Debug-Modus: deaktiviert
+2025-06-24 09:30:56,151 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-24 09:30:56,153 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-24 09:30:56,155 - root - INFO - Server wird gestartet...
+2025-06-24 09:30:56,186 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.46:8080
+2025-06-24 09:30:56,186 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-24 09:30:56,189 - werkzeug - INFO -  * Restarting with stat
+2025-06-24 09:30:57,819 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-24 09:30:57,820 - root - INFO - Umgebung: production
+2025-06-24 09:30:57,820 - root - INFO - Debug-Modus: deaktiviert
+2025-06-24 09:30:57,820 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-24 09:30:57,821 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-24 09:30:57,823 - root - INFO - Server wird gestartet...
+2025-06-24 09:30:57,835 - werkzeug - WARNING -  * Debugger is active!
+2025-06-24 09:30:57,841 - werkzeug - INFO -  * Debugger PIN: 104-948-945
+2025-06-24 09:31:01,289 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-24 09:31:01,408 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:01] "GET / HTTP/1.1" 200 -
+2025-06-24 09:31:02,006 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,011 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,016 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,024 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,083 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,116 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,116 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-24 09:31:02,147 - root - WARNING - 404 Fehler: Pfad nicht gefunden
+2025-06-24 09:31:02,173 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:31:02] "[33mGET /static/img/favicon.png HTTP/1.1[0m" 404 -
+2025-06-24 09:32:05,628 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 09:32:05,629 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 09:32:07,120 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:32:07,135 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 1505 ms
+2025-06-24 09:32:07,136 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 1505 ms
+2025-06-24 09:32:07,137 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:32:07] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 09:32:07,145 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 09:32:07,148 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 09:32:07,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:32:07,844 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 695 ms
+2025-06-24 09:32:07,845 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 695 ms
+2025-06-24 09:32:07,847 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:32:07] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 09:32:21,188 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 09:32:21,190 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 09:32:22,227 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:32:22,232 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 1042 ms
+2025-06-24 09:32:22,234 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 1042 ms
+2025-06-24 09:32:22,236 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:32:22] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 09:32:22,242 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 09:32:22,243 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 09:32:23,247 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:32:23,252 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 1008 ms
+2025-06-24 09:32:23,252 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 1008 ms
+2025-06-24 09:32:23,254 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:32:23] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 09:33:09,594 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 09:33:09,597 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Fahrerlebnis', 'content_type': 'Beitrag', 'target_audience': 'Freude', 'extra_instructions': 'He spent Sunday driving with two close friends — all three in Porsche GT3 RS models.  Their route took them through the Allgäu and up to Plansee. Emphasize the feeling of connection, the natural beauty, and the Porsche lifestyle. '}
+2025-06-24 09:33:11,724 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:33:11,982 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 09:33:11,983 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:33:11] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 09:34:02,682 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 09:34:02,684 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Lifestyle', 'content_type': 'Instagram-Story', 'target_audience': 'Neutral', 'extra_instructions': 'Describe your typical workday as an influencer. What kind of content did you create, what meetings or brand collaborations did you have, what challenges did you face, and what did you enjoy the most? Write in the first person, mixing a personal and professional tone. Include how your day started and ended.nection, the natural beauty, and the Porsche lifestyle. '}
+2025-06-24 09:34:07,679 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 09:34:07,683 - openai_api - INFO - Personalisierte Generierung erfolgreich (5.00s): 'Heute ist ein typischer Arbeitsalltag als Influencer für mich ein spannendes Abenteuer. Mein Tag beg...'
+2025-06-24 09:34:07,683 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 09:34:07,684 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 09:34:07] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 12:23:33,242 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-24 12:23:33,246 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "GET / HTTP/1.1" 200 -
+2025-06-24 12:23:33,263 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,270 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,271 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,271 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,276 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,278 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-24 12:23:33,278 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:33] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-24 12:23:34,365 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 12:23:34,365 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 12:23:35,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 12:23:35,136 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 771 ms
+2025-06-24 12:23:35,137 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 771 ms
+2025-06-24 12:23:35,137 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:35] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 12:23:35,140 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 12:23:35,141 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 12:23:35,731 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 12:23:35,733 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 592 ms
+2025-06-24 12:23:35,733 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 592 ms
+2025-06-24 12:23:35,734 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:23:35] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 12:24:57,437 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 12:24:57,437 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Fahrerlebnis', 'content_type': 'Beitrag', 'target_audience': 'Freude', 'extra_instructions': 'He spent Sunday driving with two close friends — all three in Porsche GT3 RS models.  Their route took them through the Allgäu and up to Plansee. Emphasize the feeling of connection, the natural beauty, and the Porsche lifestyle. '}
+2025-06-24 12:24:58,873 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 12:24:58,891 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 12:24:58,891 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:24:58] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 12:25:01,850 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 12:25:01,851 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Fahrerlebnis', 'content_type': 'Beitrag', 'target_audience': 'Freude', 'extra_instructions': 'He spent Sunday driving with two close friends — all three in Porsche GT3 RS models.  Their route took them through the Allgäu and up to Plansee. Emphasize the feeling of connection, the natural beauty, and the Porsche lifestyle. '}
+2025-06-24 12:25:03,552 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 12:25:03,566 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 12:25:03,567 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:03] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 12:25:17,329 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-24 12:25:17,330 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "GET / HTTP/1.1" 200 -
+2025-06-24 12:25:17,344 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,350 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,350 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,353 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,357 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,357 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-24 12:25:17,357 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:25:17] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-24 13:32:57,109 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 13:32:57,110 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Nachhaltigkeit', 'content_type': 'Instagram-Reels', 'target_audience': 'Freude', 'extra_instructions': ''}
+2025-06-24 13:32:59,577 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 13:32:59,604 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 13:32:59,605 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:32:59] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 13:33:01,914 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-24 13:33:01,917 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "GET / HTTP/1.1" 200 -
+2025-06-24 13:33:01,943 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,950 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,951 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,953 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,957 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,957 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-24 13:33:01,960 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 13:33:01] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-24 14:27:36,470 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 14:27:36,472 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 14:27:37,429 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 14:27:37,439 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 966 ms
+2025-06-24 14:27:37,440 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 966 ms
+2025-06-24 14:27:37,444 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 14:27:37] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 14:27:37,450 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-24 14:27:37,452 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-24 14:27:38,144 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 14:27:38,147 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 694 ms
+2025-06-24 14:27:38,148 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 694 ms
+2025-06-24 14:27:38,150 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 14:27:38] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-24 14:27:59,300 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 14:27:59,302 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Fahrerlebnis', 'content_type': 'Beitrag', 'target_audience': 'Freude', 'extra_instructions': 'He spent Sunday driving with two close friends — all three in Porsche GT3 RS models.  Their route took them through the Allgäu and up to Plansee. Emphasize the feeling of connection, the natural beauty, and the Porsche lifestyle. '}
+2025-06-24 14:28:01,491 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 14:28:01,529 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 14:28:01,531 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 14:28:01] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-24 14:29:09,139 - root - INFO - Personalisierte Generierung gestartet
+2025-06-24 14:29:09,140 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Lifestyle', 'content_type': 'Instagram-Story', 'target_audience': 'Neutral', 'extra_instructions': 'Describe your typical workday as an influencer. What kind of content did you create, what meetings or brand collaborations did you have, what challenges did you face, and what did you enjoy the most? Write in the first person, mixing a personal and professional tone. Include how your day started and ended.'}
+2025-06-24 14:29:12,147 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 14:29:12,151 - openai_api - INFO - Personalisierte Generierung erfolgreich (3.01s): 'Heute war ein typischer Tag als Influencer für Porsche. Mein Tag begann um 7:30 Uhr mit einem Team-B...'
+2025-06-24 14:29:12,152 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-24 14:29:12,154 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 14:29:12] "POST /api/generate/personalized HTTP/1.1" 200 -
+2025-06-26 14:54:23,148 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-26 14:54:23,148 - root - INFO - Umgebung: production
+2025-06-26 14:54:23,149 - root - INFO - Debug-Modus: deaktiviert
+2025-06-26 14:54:23,149 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-26 14:54:23,152 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-26 14:54:23,156 - root - INFO - Server wird gestartet...
+2025-06-26 14:54:23,217 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.22.22:8080
+2025-06-26 14:54:23,217 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 14:54:23,221 - werkzeug - INFO -  * Restarting with stat
+2025-06-26 14:54:25,620 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-26 14:54:25,620 - root - INFO - Umgebung: production
+2025-06-26 14:54:25,621 - root - INFO - Debug-Modus: deaktiviert
+2025-06-26 14:54:25,621 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-26 14:54:25,624 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-26 14:54:25,629 - root - INFO - Server wird gestartet...
+2025-06-26 14:54:25,638 - werkzeug - WARNING -  * Debugger is active!
+2025-06-26 14:54:25,651 - werkzeug - INFO -  * Debugger PIN: 961-764-374
+2025-06-26 14:54:25,683 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-26 14:54:25,824 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:25] "GET / HTTP/1.1" 200 -
+2025-06-26 14:54:26,052 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,052 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,054 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,081 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,109 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,215 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-26 14:54:26,215 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:26] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-26 14:54:27,599 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-26 14:54:27,600 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-26 14:54:28,744 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 14:54:28,753 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 1151 ms
+2025-06-26 14:54:28,754 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 1151 ms
+2025-06-26 14:54:28,756 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:28] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-26 14:54:28,765 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-26 14:54:28,767 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-26 14:54:29,724 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 14:54:29,728 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 960 ms
+2025-06-26 14:54:29,729 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 960 ms
+2025-06-26 14:54:29,731 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:29] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-26 14:54:34,151 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-26 14:54:34,194 - root - WARNING - 404 Fehler: Pfad nicht gefunden
+2025-06-26 14:54:34,238 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-06-26 14:54:38,057 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:54:38] "GET /static/public/Ray.png HTTP/1.1" 200 -
+2025-06-26 14:58:12,583 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-26 14:58:12,583 - root - INFO - Umgebung: production
+2025-06-26 14:58:12,584 - root - INFO - Debug-Modus: deaktiviert
+2025-06-26 14:58:12,584 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-26 14:58:12,585 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-26 14:58:12,587 - root - INFO - Server wird gestartet...
+2025-06-26 14:58:12,640 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.22.22:8080
+2025-06-26 14:58:12,641 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 14:58:12,644 - werkzeug - INFO -  * Restarting with stat
+2025-06-26 14:58:14,296 - root - INFO - === Porsche Social Content Generator gestartet ===
+2025-06-26 14:58:14,296 - root - INFO - Umgebung: production
+2025-06-26 14:58:14,296 - root - INFO - Debug-Modus: deaktiviert
+2025-06-26 14:58:14,297 - root - INFO - OpenAI API Schlüssel: konfiguriert
+2025-06-26 14:58:14,299 - root - INFO - OpenAI API-Schlüssel erfolgreich geladen
+2025-06-26 14:58:14,302 - root - INFO - Server wird gestartet...
+2025-06-26 14:58:14,310 - werkzeug - WARNING -  * Debugger is active!
+2025-06-26 14:58:14,316 - werkzeug - INFO -  * Debugger PIN: 961-764-374
+2025-06-26 14:58:16,020 - root - INFO - Hauptseite (/) mit Landing Page und Generator aufgerufen
+2025-06-26 14:58:16,039 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "GET / HTTP/1.1" 200 -
+2025-06-26 14:58:16,167 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,181 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/public/hintergrundbild.png HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,207 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,212 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/public/Ray.png HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,213 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/public/porsche%20logo.png HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,275 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/public/Antonio-Regular.ttf HTTP/1.1[0m" 304 -
+2025-06-26 14:58:16,276 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:16] "[36mGET /static/public/Antonio-SemiBold.ttf HTTP/1.1[0m" 304 -
+2025-06-26 14:58:17,562 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-26 14:58:17,564 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-26 14:58:18,499 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 14:58:18,502 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 937 ms
+2025-06-26 14:58:18,503 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 937 ms
+2025-06-26 14:58:18,503 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:18] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-26 14:58:18,509 - root - INFO - API-Verbindungstest gestartet (Meeting 1 Version)
+2025-06-26 14:58:18,509 - openai_api - INFO - Starte OpenAI API Verbindungstest...
+2025-06-26 14:58:19,373 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 14:58:19,380 - openai_api - INFO - OpenAI API Verbindungstest erfolgreich. Antwortzeit: 870 ms
+2025-06-26 14:58:19,381 - root - INFO - API-Verbindungstest erfolgreich: Antwortzeit: 870 ms
+2025-06-26 14:58:19,382 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:19] "GET /api/connection/test HTTP/1.1" 200 -
+2025-06-26 14:58:34,343 - root - INFO - Personalisierte Generierung gestartet
+2025-06-26 14:58:34,345 - openai_api - INFO - Starte personalisierte Textgenerierung mit Parametern: {'topic': 'Nachhaltigkeit', 'content_type': 'Instagram-Story', 'target_audience': 'Freude', 'extra_instructions': 'test'}
+2025-06-26 14:58:36,329 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 14:58:36,700 - root - INFO - Personalisierte Generierung erfolgreich.
+2025-06-26 14:58:36,701 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 14:58:36] "POST /api/generate/personalized HTTP/1.1" 200 -
