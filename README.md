@@ -151,21 +151,20 @@ OPENAI_API_KEY=sk-your-actual-api-key-here
 Prototyp/
 ├── app.py                 # Hauptanwendungsdatei mit Flask-App und Routen
 ├── content_generator.py   # Module zur Generierung von Inhalten mit OpenAI
-├── requirements.txt       # Python-Abhängigkeiten
+├── requirements.txt       # Python-Abhängigkeiten (vereinfacht)
 ├── .env                  # API-Schlüssel (nicht im Repository)
 ├── README.md             # Diese Datei
+├── .gitignore            # Git-Ignore-Datei
 ├── templates/            # HTML-Templates für die Benutzeroberfläche
-│   ├── base.html
-│   ├── index.html
-│   ├── landing.html
-│   ├── main_page.html
-│   ├── 404.html
-│   └── 500.html
+│   ├── base.html         # Basis-Template mit Header und Navigation
+│   ├── main_page.html    # Hauptseite (Landing Page + Generator kombiniert)
+│   ├── 404.html          # Fehlerseite - Seite nicht gefunden
+│   └── 500.html          # Fehlerseite - Serverfehler
 ├── static/               # Statische Dateien
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css     # Hauptstylesheet
 │   ├── js/
-│   │   └── app.js
+│   │   └── app.js        # JavaScript-Funktionen
 │   └── public/           # Bilder und Schriftarten
 │       ├── Antonio-Regular.ttf
 │       ├── Antonio-SemiBold.ttf
@@ -173,8 +172,8 @@ Prototyp/
 │       ├── porsche logo.png
 │       └── Ray.png
 ├── logs/                 # Log-Dateien
-│   ├── app.log
-│   └── api.log
+│   ├── app.log           # Allgemeine Anwendungslogs
+│   └── api.log           # API-spezifische Logs
 └── venv/                 # Virtuelle Umgebung (wird bei Installation erstellt)
 ```
 
