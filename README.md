@@ -25,8 +25,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass folgende Software installiert ist:
 1. **Anmelden**: Melden Sie sich bei [https://platform.openai.com](https://platform.openai.com) an
 
 2. **API-Schlüssel erstellen**:
-   - Klicken Sie auf Ihr **Profilbild** (oben rechts)
-   - Wählen Sie **"View API keys"** oder **"API-Schlüssel anzeigen"**
+   - Gehen Sie auf [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys) 
    - Klicken Sie auf **"Create new secret key"** oder **"Neuen geheimen Schlüssel erstellen"**
 
 3. **Schlüssel konfigurieren**:
@@ -39,7 +38,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass folgende Software installiert ist:
    - Der Schlüssel wird nur einmal angezeigt und kann später nicht mehr eingesehen werden
    - Format: `sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
-### Schritt 3: Guthaben hinzufügen
+### Schritt 3: Ggf. Guthaben hinzufügen
 1. **Billing-Sektion**: Gehen Sie zu **"Billing"** oder **"Abrechnung"** im Menü
 
 2. **Payment Method**: Fügen Sie eine **Zahlungsmethode** hinzu (Kreditkarte oder PayPal)
